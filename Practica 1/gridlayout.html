@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body{
+            background-color:#F2D0C4 ;
+        }
+        a{
+            text-decoration: none;
+            color: #F2D0C4;
+        }
+        .linea{
+            background-color: #000000;
+            padding: 5px;
+        }
+        .caja{
+            background-color: #F2D0C4;
+            border: 1px solid #000000;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+        }
+        .cajaSM{
+            background-color: #F2D0C4;
+            border: 1px solid #000000;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+        }
+        .cajaSM1{
+            background-color: #F2D0C4;
+            border: 1px solid #000000;
+            margin: 5px;
+            text-align: center;
+            border-radius: 10px;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .cajaSM2{
+            background-color: #F2D0C4;
+            border: 1px solid #000000;
+            margin: 5px;
+            text-align: center;
+            border-radius: 10px;
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+        .cajaSM3{
+            background-color: #F2D0C4;
+            border: 1px solid #000000;
+            margin: 5px;
+            text-align: center;
+            border-radius: 10px;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .titulo{
+            background-color:#593622;
+            color: #F2D0C4;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+        }
+        .subtitulo{
+            background-color: #D9AFA0;
+            padding: 5px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 5px;
+            border: 1px solid #000000;
+        }
+        .navegacion{
+            background-color: #A68C76;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 5px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            
+        }
+        .nav{
+            background-color:#593622;
+            padding: 5px;
+            border-radius: 10px;
+            margin:  5px;
+
+        }
+        .subcontenido1{
+            background-color:#D9AFA0 ;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            border: 1px solid #000000;
+
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .subcontenido2{
+            background-color:#D9AFA0 ;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            border: 1px solid #000000;
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .subcontenido3{
+            background-color:#D9AFA0 ;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            border: 1px solid #000000;
+
+            display: grid;
+            grid-template-columns: 20% 50% 30%;
+        }
+        .subcontenido4{
+            background-color:#D9AFA0 ;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            border: 1px solid #000000;
+
+            display: grid;
+            grid-template-columns: 20% 50% 30%;
+            grid-template-rows: 40% 60%;
+        }
+        .subcontenido5{
+            background-color:#D9AFA0 ;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            border: 1px solid #000000;
+            height: 300px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+
+
+
+        .piedepagina{
+            background-color: #260B01;
+            padding: 10px;
+            border-radius: 10px;
+            color: #F2D0C4;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridlayout">
+        <div class="titulo">
+            <h1>GRID LAYOUT</h1>
+        </div>
+        <div class="navegacion">
+            <h4 class="nav"><a href="./index.html">INICIO </a></h4>
+            <h4 class="nav"><a href="./singlecolumn.html">SINGLE COLUMN</a></h4>
+            <h4 class="nav"><a href="./splitscreen.html">SPLIT SCREEN</a></h4>
+            <h4 class="nav"><a href="./flexbox.html">FLEXBOX</a></h4>
+            
+        </div>
+        <div class="contenido">
+            <div class="linea"></div>
+
+            <div class="subtitulo"><h2>GRID TEMPLATE-COLUMNS (2 columnas)</h2></div>
+            <div class="subcontenido1">
+                <div class="caja">Caja 1</div>
+                <div class="caja">Caja 2</div>
+                <div class="caja">Caja 3</div>
+                <div class="caja">Caja 4</div>
+                <div class="caja">Caja 5</div>
+                <div class="caja">Caja 6</div>
+            </div>
+            <div class="linea"></div>
+
+            <div class="subtitulo"><h2>GRID TEMPLATE-COLUMNS (3 columnas)</h2></div>
+            <div class="subcontenido2">
+                <div class="caja">Caja 1</div>
+                <div class="caja">Caja 2</div>
+                <div class="caja">Caja 3</div>
+                <div class="caja">Caja 4</div>
+                <div class="caja">Caja 5</div>
+                <div class="caja">Caja 6</div>
+            </div>
+            <div class="linea"></div>
+
+            <div class="subtitulo"><h2>GRID TEMPLATE-COLUMNS (3 columnas 20% 50% 30%)</h2></div>
+            <div class="subcontenido3">
+                <div class="cajaSM">Caja 1</div>
+                <div class="cajaSM">Caja 2</div>
+                <div class="cajaSM">Caja 3</div>
+                <div class="cajaSM">Caja 4</div>
+                <div class="cajaSM">Caja 5</div>
+                <div class="cajaSM">Caja 6</div>
+            </div>
+            <div class="linea"></div>
+
+            <div class="subtitulo"><h2>GRID TEMPLATE-COLUMNS (3 columnas 20% 50% 30% y 2 filas 40% 60%)</h2></div>
+            <div class="subcontenido4">
+                <div class="cajaSM">Caja 1</div>
+                <div class="cajaSM">Caja 2</div>
+                <div class="cajaSM">Caja 3</div>
+                <div class="cajaSM">Caja 4</div>
+                <div class="cajaSM">Caja 5</div>
+                <div class="cajaSM">Caja 6</div>
+            </div>
+            <div class="linea"></div>
+
+            <div class="subtitulo"><h2>GRID CON CAJAS ACOMODADAS</h2></div>
+            <div class="subcontenido5">
+                <div class="cajaSM1">Caja 1</div>
+                <div class="cajaSM2">Caja 2</div>
+                <div class="cajaSM3">Caja 3</div>
+            </div>
+            <div class="linea"></div>
+
+        </div>
+        <div class="piedepagina">
+            <h3>REALIZADO POR SAUL YERKO BONILLA ARUQUIPA</h3>
+        </div>
+
+    </div>
+    
+</body>
+</html>

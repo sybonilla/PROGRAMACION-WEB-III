@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            background-color: #BEBDBF;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        h3{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .linea{
+            padding: 5px;
+            background-color: #000000;
+        }
+        .caja{
+            background-color: #BEBDBF;
+            border: 1px;
+            border-color: #000000;
+            border-style: solid;
+            height: 100px;
+            width: 100px;
+            color: #000000;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+
+        }
+       
+        .nav{
+            margin: 5px;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #D9A577;
+        }
+        .flexbox{
+            display: flex;
+            flex-direction: column;
+        }
+        .encabezado{
+            background-color: #A63754;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+        .navegacion{
+            background-color: #A68521;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .subtitulo{
+            background-color: #A68521;
+            margin: 5px;
+            border-radius: 10px ;
+            border: 1px;
+            border-style: solid;
+            border-color: #000000;
+        }
+        .contenido{
+            background-color: #D9A577;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .subcontenido1{
+            border: 1px;
+            border-color: #000000;
+            border-style: solid;
+            background-color: #A68521;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+        .subcontenido2{
+            border: 1px;
+            border-color: #000000;
+            border-style: solid;
+            background-color: #A68521;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .subcontenido3{
+            border: 1px;
+            border-color: #000000;
+            border-style: solid;
+            background-color: #A68521;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .subcontenido4{
+            border: 1px;
+            border-color: #000000;
+            border-style: solid;
+            background-color: #A68521;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .subcontenido5{
+            border: 1px;
+            border-color: #000000;
+            border-style: solid;
+            background-color: #A68521;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .subcontenido6{
+            border: 1px;
+            border-color: #000000;
+            border-style: solid;
+            background-color: #A68521;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .piedepagina{
+            background-color: #0F1D26;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            color: #BEBDBF;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="encabezado"><h1>FLEXBOX</h1></div>
+        <div class="navegacion">
+            <h4 class="nav"><a href="./index.html">INICIO </a></h4>
+            <h4 class="nav"><a href="./singlecolumn.html">SINGLE COLUMN </a></h4>
+            <h4 class="nav"><a href="./splitscreen.html">SPLIT SCREEN </a></h4>
+            <h4 class="nav"><a href="./gridlayout.html">GRID </a></h4>
+            
+           
+            
+        </div>
+
+        <div class="contenido">
+            <div class="linea"></div>
+            <div class="subtitulo"><h2>FLEX ROW</h2></div>
+            <div class="subcontenido1">
+                <div class="caja">Caja 1</div>
+                <div class="caja">Caja 2</div>
+                <div class="caja">Caja 3</div>
+                <div class="caja">Caja 4</div>
+            </div>
+            <div class="linea"></div>
+            <div class="subtitulo"><h2>FLEX ROW-REVERSE</h2></div>
+            <div class="subcontenido2">
+                <div class="caja">Caja 1</div>
+                <div class="caja">Caja 2</div>
+                <div class="caja">Caja 3</div>
+                <div class="caja">Caja 4</div>
+            </div>
+            <div class="linea"></div>
+            <div class="subtitulo"><h2>FLEX COLUMN</h2></div>
+            <div class="subcontenido3">
+                <div class="caja">Caja 1</div>
+                <div class="caja">Caja 2</div>
+                <div class="caja">Caja 3</div>
+                <div class="caja">Caja 4</div>
+            </div>
+            <div class="linea"></div>
+
+            <div class="subtitulo"><h2>FLEX COLUMN-REVERSE</h2></div>
+            <div class="subcontenido4">
+                <div class="caja">Caja 1</div>
+                <div class="caja">Caja 2</div>
+                <div class="caja">Caja 3</div>
+                <div class="caja">Caja 4</div>
+            </div>
+            <div class="linea"></div>
+
+            <div class="subtitulo"><h2>FLEX ROW NOWRAP</h2></div>
+            <div class="subcontenido5">
+                <div class="caja">Caja 1</div>
+                <div class="caja">Caja 2</div>
+                <div class="caja">Caja 3</div>
+                <div class="caja">Caja 4</div>
+                <div class="caja">Caja 5</div>
+                <div class="caja">Caja 6</div>
+                <div class="caja">Caja 7</div>
+                <div class="caja">Caja 8</div>
+                <div class="caja">Caja 9</div>
+                <div class="caja">Caja 10</div>
+                <div class="caja">Caja 11</div>
+                <div class="caja">Caja 12</div>
+            </div>
+            <div class="linea"></div>
+
+            <div class="subtitulo"><h2>FLEX ROW WRAP</h2></div>
+            <div class="subcontenido6">
+                <div class="caja">Caja 1</div>
+                <div class="caja">Caja 2</div>
+                <div class="caja">Caja 3</div>
+                <div class="caja">Caja 4</div>
+                <div class="caja">Caja 5</div>
+                <div class="caja">Caja 6</div>
+                <div class="caja">Caja 7</div>
+                <div class="caja">Caja 8</div>
+                <div class="caja">Caja 9</div>
+                <div class="caja">Caja 10</div>
+                <div class="caja">Caja 11</div>
+                <div class="caja">Caja 12</div>
+            </div>
+            <div class="linea"></div>
+        </div>
+        <div class="piedepagina">
+            <h3>REALIZADO POR SAUL YERKO BONILLA ARUQUIPA</h3>
+        </div>
+        
+    </div>
+</body>
+</html>
