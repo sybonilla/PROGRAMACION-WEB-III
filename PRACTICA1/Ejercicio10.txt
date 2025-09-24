@@ -1,0 +1,3 @@
+10.	¿Cuándo es conveniente utilizar un callback, y cuando es necesario utilizar una promesa?
+Los callbacks son convenientes y, a menudo, la mejor opción para tareas asíncronas simples y puntuales. Se usan en escenarios donde no necesitas una gestión compleja del flujo de datos o del manejo de errores.
+Las promesas son necesarias cuando manejas operaciones asíncronas complejas, encadenadas o que requieren un manejo de errores robusto. Son la herramienta moderna para evitar el "callback hell"(Infierno de Callbacks) y estructurar el código de forma más legible.
